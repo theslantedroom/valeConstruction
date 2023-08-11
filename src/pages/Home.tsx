@@ -1,18 +1,15 @@
 import React from 'react';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 
-// @mui material components
 import {
   Stack,
   Box,
   Typography,
   IconButton,
   Divider,
-  Button,
   useTheme,
   useMediaQuery,
 } from '@mui/material';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -25,6 +22,7 @@ import { usePaletteModeContext } from '../theme/MuiThemeProvider';
 import { globalSiteData } from '../hardData/globalSiteData';
 import { HomeLayout } from './HomeLayout';
 import { colors } from '../theme/palettes/colors';
+
 export interface Props {}
 export const Home: React.FC<Props> = ({}) => {
   const { togglePaletteMode } = usePaletteModeContext();
