@@ -127,7 +127,7 @@ export const Home: React.FC<Props> = ({}) => {
 
       {isLg ? null : (
         <Box sx={{ width: '100%', py: 2 }}>
-          <LiteYouTubeEmbed id="u31qwQUeGuM" title="Demo" />
+          <LiteYouTubeEmbed id={globalSiteData.youtubeVideoId} title="Demo" />
         </Box>
       )}
       <Divider sx={{ my: 4 }} />

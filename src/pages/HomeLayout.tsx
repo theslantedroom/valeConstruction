@@ -5,6 +5,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import { Box, Grid, Paper, useTheme, useMediaQuery } from '@mui/material';
 // Contexts
 import { usePaletteModeContext } from '../theme/MuiThemeProvider';
+import { globalSiteData } from '../hardData/globalSiteData';
 export interface Props {
   illustration?: string;
   children?: any;
@@ -45,7 +46,7 @@ export const HomeLayout: React.FC<Props> = ({ illustration, children }) => {
           >
             {isLg ? (
               <Box sx={{ width: '100%', pl: 3 }}>
-                <LiteYouTubeEmbed id="u31qwQUeGuM" title="Demo" />
+                <LiteYouTubeEmbed id={globalSiteData.youtubeVideoId} title="Demo" />
               </Box>
             ) : null}
           </Grid>
