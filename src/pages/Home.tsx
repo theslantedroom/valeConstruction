@@ -47,7 +47,7 @@ export const Home: React.FC<Props> = ({}) => {
         </Typography>
 
         <Typography variant="h6" sx={{ my: 1 }} textAlign="center">
-          {'Debut Release'}
+          {globalSiteData.subHeader}
         </Typography>
 
         <Box>
@@ -58,13 +58,9 @@ export const Home: React.FC<Props> = ({}) => {
           </Stack>
         </Box>
       </Box>
-      {isLg ? null : (
-        <Box sx={{ width: '100%', pt: 2 }}>
-          <LiteYouTubeEmbed id="56feCXQrFYA" title="Pux" />
-        </Box>
-      )}
 
       <ImageGallery items={globalSiteData.images} />
+
       <Divider sx={{ my: 4 }} />
       <Box>
         <Box mb={4} textAlign="center">
@@ -127,6 +123,13 @@ export const Home: React.FC<Props> = ({}) => {
           </Stack>
         </Box>
       </Box>
+      <Divider sx={{ my: 4 }} />
+
+      {isLg ? null : (
+        <Box sx={{ width: '100%', py: 2 }}>
+          <LiteYouTubeEmbed id="u31qwQUeGuM" title="Demo" />
+        </Box>
+      )}
       <Divider sx={{ my: 4 }} />
       <Box>
         <Box mb={1} textAlign="center">
